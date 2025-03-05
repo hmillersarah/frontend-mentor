@@ -11,13 +11,69 @@
     // Font
     $font-family: 'Poppins';
     $p-size: 1.5em;
+    $h1-size: 2.4em;
+    $h2-size: 2em;
 
 html {
     font-size: 62.5%;
 }
 
-body {
+h1 {
+    font-weight: 100;
+    font-size: $h1-size;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    font-size: $h2-size;
+}
+
+p {
     font-size: $p-size;
+    margin: 0em;
+    padding: 0em;
+}
+
+body {
+    font-family: $font-family;
+    color: $dark-blue;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 1.8em;
+    border-top: solid 2px;
+}
+
+.cyan {
+    border-top-color: $cyan;
+}
+
+.red {
+    border-top-color: $red;
+}
+
+.orange {
+    border-top-color: $orange;
+}
+
+.blue {
+    border-top-color: $blue;
 }
 
 .attribution { font-size: 1.1em; text-align: center; }
